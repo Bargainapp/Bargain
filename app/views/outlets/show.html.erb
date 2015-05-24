@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<%= image_tag @outlet.image.url(:medium) %>       
+
+<p>
+  <strong>Title:</strong>
+  <%= @outlet.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @outlet.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @outlet.price %>
+</p>
+
+<p>
+  <strong>Outlet:</strong>
+  <%= @outlet.outlet %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @outlet.company %>
+</p>
+
+<%= link_to 'Edit', edit_outlet_path(@outlet) %> |
+<%= link_to 'Back', outlets_path %>
