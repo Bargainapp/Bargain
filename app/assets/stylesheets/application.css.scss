@@ -91,13 +91,24 @@ body {
   text-align: left;
   margin-top: 10px;
 }
-// 
-// .img_b {
-//   background-color: white;
-//
-//   margin-right: 10px;
-//
-// }
+
+.img_b {
+  background-color: white;
+  height: 374px;
+  width: 374px;
+  margin: 10px;
+  border-radius: 6px;
+
+}
+
+.cimg {
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  padding-top: 5px;
+}
 
 // }
 //

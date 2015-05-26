@@ -6,7 +6,7 @@
 <div class="container ">
 <div class="row">
 
-  <div class="scroller col-md-12">
+  <div class="scroller">
     <div><img src="assets/Salerot.jpg" alt="Price"></div>
     <div><img src="assets/Salerot.jpg" alt="Price"></div>
     <div><img src="assets/Pricecheck.jpg" alt="Price"></div>
@@ -33,19 +33,25 @@
 </div>
 <h1>Electronics</h1>
     <% @categories.each do |category| %>
-        <div class="col-md-4 img_b">
+        <div class="col-md-4">
+
+          <div class=" img_b">
+        <%= link_to (image_tag category.image.url(:medium), class: 'cimg'), products_path(category_id: category.id)%>
 
 
-        <%= link_to (image_tag category.image.url(:medium), class: 'img'), products_path(category_id: category.id)%>
+        <div class="title"> <%= category.title %> </div>
+        <div class="info">
+          <ul>
+            <li>Price: ksh30,000 </li>
+            <li>Outlet: Nakumatt </li>
+            <li>Location: Nairobi </li>
+          </div>
 
-
-        <%= category.title %>
-
-        <%= link_to 'Show', category %>
+        <!-- <%= link_to 'Show', category %>
         <%= link_to 'Edit', edit_category_path(category) %>
-        <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %> -->
       </div>
-
+    </div>
     <% end %>
 
 </div>
