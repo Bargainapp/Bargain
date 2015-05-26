@@ -1,5 +1,5 @@
 class Company < ActiveRecord::Base
-
+  searchkick
   belongs_to :product
   has_many :outlets
 

@@ -1,0 +1,123 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'slick';
+@import 'slick-theme';
+
+
+body {
+      padding-top: 70px;
+      font-family: 'Open Sans', sans-serif;
+      background: rgb(235, 238, 243);
+      }
+
+.navbar {
+      padding-top: 15px;
+      height: 80px;
+      background-color: #f84545;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -3px;
+  text-decoration: underline;
+
+
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  color: white;
+  text-decoration: underline;
+}
+
+.navbar-brand :hover {
+  color: white;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-form .form-control {
+    display: inline-block;
+    width: 500px;
+    vertical-align: middle;
+}
+
+.categories {
+
+
+}
+
+.categories a{
+  font-size: 20px;
+  padding-top:10px;
+  color: black;
+
+
+}
+.categories a:hover {
+  color: lightblue;
+  background-color: rgb(235, 238, 243) !important;
+  text-decoration: none;
+
+
+}
+
+
+.categories ul {
+  padding-left: 0;
+
+}
+
+.categories ul li {
+  list-style-type: none;
+  text-align: left;
+  margin-top: 10px;
+}
+// 
+// .img_b {
+//   background-color: white;
+//
+//   margin-right: 10px;
+//
+// }
+
+// }
+//
+// .sec {
+//   background-color: white;
+//   border-radius: 8px;
+//   margin-bottom: 40px;
+//   font-weight: 400;
+// }
+//
+// .line {
+//   border-color: #f84545;
+// }
+//
+// .cheading {
+//   text-align: center;
+//   font-weight: 400;
+//   font-style: italic;
+// }
+//
+// .img {
+//   margin: 0 auto;
+// }

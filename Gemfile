@@ -22,6 +22,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 #Easy file attachment management for ActiveRecord
 gem 'paperclip', '~> 4.2.0'
+#Official Sass port of Bootstrap
+gem 'bootstrap-sass', '~> 3.3.4'
+#Intelligent search made easy
+gem 'searchkick', '~> 0.8.7'
+#Integrates Slick carousel, a jQuery plugin, into your Rails app.
+gem "jquery-slick-rails"
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 

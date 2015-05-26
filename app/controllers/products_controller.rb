@@ -1,15 +1,26 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @products = Product.search(params[:search])
+    else
+      @products = Product.all
+    end
+ end
+
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    puts "************^^^^^^^^^" + params.inspect
+    @products = Product.where("category_id = ?",params[:category_id])
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
+    # @products = Product.where("category_id = 1",params[:product])
+    @products = Product
   end
 
   # GET /products/new

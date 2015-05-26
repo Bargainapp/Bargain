@@ -1,30 +1,23 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Listing Companies</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Product</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<h1>Companies</h1>
+  <div class="container ">
+  <div class="row">
     <% @companies.each do |company| %>
-      <tr>
-        <%= link_to (image_tag company.image.url(:medium)), outlets_path%>
-        <td><%= company.title %></td>
-        <td><%= company.product %></td>
-        <td><%= link_to 'Show', company %></td>
-        <td><%= link_to 'Edit', edit_company_path(company) %></td>
-        <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <div class="col-md-4">
+      <div class="sec">
+
+        <%= link_to (image_tag company.image.url(:medium), class: 'img'), outlets_path%>
+        <div class="under">
+        <hr class="line">
+        <h3 class="cheading">
+        <%= company.title %></h3>
+        <%= company.product %>
+        <%= link_to 'Show', company %>
+        <%= link_to 'Edit', edit_company_path(company) %>
+        <%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+      </div>
+    </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Company', new_company_path %>
+  </div>
+</div>

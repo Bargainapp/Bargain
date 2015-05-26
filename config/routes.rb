@@ -1,8 +1,27 @@
 Rails.application.routes.draw do
-  resources :outlets
-  resources :companies
-  resources :products
-  resources :categories
+
+  resources :outlets do
+    collection do
+    get 'search'
+  end
+end
+  resources :companies do
+    collection do
+    get 'search'
+  end
+end
+
+  resources :products do
+    collection do
+    get 'search'
+  end
+end
+
+  resources :categories do
+    collection do
+    get 'search'
+  end
+end
   root "categories#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

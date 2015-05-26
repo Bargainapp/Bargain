@@ -1,6 +1,14 @@
 class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @companies = Company.search(params[:search])
+      else
+        @companies = Company.all
+      end
+   end
+
   # GET /companies
   # GET /companies.json
   def index

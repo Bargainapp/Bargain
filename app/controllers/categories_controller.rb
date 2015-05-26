@@ -1,6 +1,15 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
 
+
+  def search
+    if params[:search].present?
+      @categories = Category.search(params[:search])
+    else
+      @categories = Category.all
+    end
+ end
+
   # GET /categories
   # GET /categories.json
   def index

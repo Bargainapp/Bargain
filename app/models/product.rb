@@ -1,5 +1,6 @@
 class Product < ActiveRecord::Base
 
+  searchkick
   belongs_to :category
   has_many :companies
 

@@ -1,6 +1,14 @@
 class OutletsController < ApplicationController
   before_action :set_outlet, only: [:show, :edit, :update, :destroy]
 
+  def search
+    if params[:search].present?
+      @outlets = Outlet.search(params[:search])
+    else
+      @outlets = Outlet.all
+    end
+ end
+
   # GET /outlets
   # GET /outlets.json
   def index
