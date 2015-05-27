@@ -84,12 +84,15 @@ body {
 .categories ul {
   padding-left: 0;
 
+
 }
 
 .categories ul li {
   list-style-type: none;
   text-align: left;
   margin-top: 10px;
+  display: inline-block;
+  margin-right: 150px;
 }
 
 .img_b {
@@ -109,7 +112,12 @@ body {
   text-align: center;
   padding-top: 5px;
 }
-
+.borderimg {
+  width: 600px;
+  height: 500px;
+  border: 1px solid #000;
+  padding: 40px;
+}
 // }
 //
 // .sec {

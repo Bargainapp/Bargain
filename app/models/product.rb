@@ -4,6 +4,6 @@ class Product < ActiveRecord::Base
   belongs_to :category
   has_many :companies
 
-  has_attached_file :image, styles: { :medium => "300x300#" }
+  has_attached_file :image, styles: { :medium => "533x400#" }
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 end

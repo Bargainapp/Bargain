@@ -13,8 +13,9 @@
   </div>
 
 
-  <div class="categories">
+  <div class="categories col-md-12">
     <h1>Categories</h1>
+    <hr>
   <ul>
     <li>
         <a href="#">Foods & Groceries</a>
@@ -31,6 +32,8 @@
 </li>
 </ul>
 </div>
+
+
 <h1>Electronics</h1>
     <% @categories.each do |category| %>
         <div class="col-md-4">
@@ -40,12 +43,12 @@
 
 
         <div class="title"> <%= category.title %> </div>
-        <div class="info">
+        <!-- <div class="info">
           <ul>
             <li>Price: ksh30,000 </li>
             <li>Outlet: Nakumatt </li>
             <li>Location: Nairobi </li>
-          </div>
+          </div> -->
 
         <!-- <%= link_to 'Show', category %>
         <%= link_to 'Edit', edit_category_path(category) %>
