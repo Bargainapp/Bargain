@@ -113,10 +113,34 @@ body {
   padding-top: 5px;
 }
 .borderimg {
-  width: 600px;
-  height: 500px;
-  border: 1px solid #000;
-  padding: 40px;
+
+  margin-top: 50px;
+  margin-left: -20px;
+  background-color: white;
+  width: 100%;
+  padding: 50px;
+}
+
+.borderimg .img {
+  width: 400px;
+  float: left;
+  text-align: center;
+}
+
+.ptitle {
+  font-size: 30px;
+font-weight: 700;
+font-style: italic;
+margin-top: 42px;
+}
+
+.pinfo ul {
+  list-style: outside none none;
+  font-size: 24px;
+}
+
+.pinfo p {
+  font-size: 15px;
 }
 // }
 //

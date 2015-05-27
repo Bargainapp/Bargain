@@ -5,22 +5,37 @@
   <div class="container ">
     <div class="row">
     <% @products.each do |product| %>
-    <div class="col-md-4">
-        <div class="borderimg col-md-6">
-        <%= link_to (image_tag product.image.url(:medium),class: 'img'), companies_path%>
+
+        <div class="col-md-4">
+
+          <div class=" img_b">
+        <%= link_to (image_tag product.image.url(:medium),class: 'cimg'), companies_path%>
+
+        <div class="title"> <%= product.title %> </div>
 
 
-      <div class="col-md-6"> <%= product.title %> </div>
-        <%= product.category %>
+        <!-- <%= product.category %> -->
 
-        <!-- <%= link_to 'Show', product %>
+        <%= link_to 'Show', product %>
         <%= link_to 'Edit', edit_product_path(product) %>
-        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> -->
-      </div>
+        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
 
-      </div>
+      <!-- <div class="col-md-6 ptitle"> -->
 
-    <% end %>
+        <!-- <ul>
+          <li class="price">Price: ksh30,000 </li>
+          <li class="outlet">Outlet: Nakumatt </li>
+          <li class="stock"> Stock: In stock </li>
+        </ul>
+        <h3 class="desctitle"> Description</h3>
+        <p descp>Double layer, sheer mini skirt with metallic stars and beaded waistband.
+          Comes with lining and zip closure Double layer, sheer mini skirt with metallic stars
+          and beaded waistband. Comes with lining and zip closure
+        </p>
+      </div> -->
+    </div>
+  </div>
+  <% end %>
   </div>
 </div>
 
