@@ -14,6 +14,7 @@ class ProductsController < ApplicationController
   def index
     puts "************^^^^^^^^^" + params.inspect
     @products = Product.where("category_id = ?",params[:category_id])
+  
   end
 
   # GET /products/1

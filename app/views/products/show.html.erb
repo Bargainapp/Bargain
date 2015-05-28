@@ -1,5 +1,12 @@
 <p id="notice"><%= notice %></p>
 
+
+<div class="row wrapper">
+
+  <div class="col-md-6">
+  <%= image_tag @product.image.url(:medium), :class => " pimg" %>
+</div>
+<div class="col-md-6 pinfo">
 <p>
   <strong>Title:</strong>
   <%= @product.title %>
@@ -9,11 +16,14 @@
   <%= @product.price %>
 </p>
 <p>
-  <strong>Category:</strong>
+  <!-- <strong>Category:</strong>
   <%= @product.category %>
-</p>
+</p> -->
+</div>
 
-<%= image_tag @product.image.url(:medium) %>
+</div>
+
+</div>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path(@product) %>
