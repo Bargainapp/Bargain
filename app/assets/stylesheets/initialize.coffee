@@ -1,4 +1,4 @@
-jQuery ->
-  $('.scroller').slick({
-    dots: true
-  })
+# jQuery ->
+#   $('.scroller').slick({
+#     dots: true
+#   })

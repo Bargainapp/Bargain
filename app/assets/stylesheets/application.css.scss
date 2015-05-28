@@ -19,11 +19,85 @@
 @import 'slick';
 @import 'slick-theme';
 
-
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
-      padding-top: 60px;
+      // padding-top: 60px;
       font-family: 'Open Sans', sans-serif;
       background: rgb(235, 238, 243);
+      margin: 0 auto;
+      padding: 0;
+      }
+
+      .bgimg {
+        background-image: url('/assets/bgimg.jpg');
+        background-size: cover;
+        height: 610px;
+        width: 100%;
+      }
+      .mainh {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .bgimg h1 {
+        font-size: 51px;
+        font-size: 51px;
+        color: #FFF;
+        font-weight: 600;
+        padding: 80px 10px 80px 10px;;
+        letter-spacing: 0px;
+        padding-left: 10px;
+        display: inline-block;
+
+      }
+
+      .hspa {
+        font-size: 37px;
+        font-weight: 600;
+        color: white;
+      }
+
+      .bgimg h2{
+        margin-top: -150px;
+        padding: 90px;
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        display: inline-block;
+
+}
+      .bgimg h3 {
+      text-align: center;
+      margin-top: -50px;
+      color: white;
+      font-size: 36px;
+      }
+
+      .bs {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+
+      .bs button {
+        background-color: rgb(219, 98, 98);
+        border: none;
+        border-radius: 10px;
+        font-size: 35px;
+        color: white;
+        padding: 8px;
+        font-weight: bold;
+        }
+
+
+
+      .bar {
+        color: #DB6161;
+        font-weight: bold;
+        letter-spacing: -3px
       }
 
 .navbar {
