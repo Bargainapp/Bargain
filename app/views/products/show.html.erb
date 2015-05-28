@@ -16,4 +16,4 @@
 <%= image_tag @product.image.url(:medium) %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<%= link_to 'Back', products_path(@product) %>

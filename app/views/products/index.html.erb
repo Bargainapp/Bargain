@@ -9,12 +9,13 @@
         <div class="col-md-4">
 
           <div class=" img_b">
-        <%= link_to (image_tag product.image.url(:medium),class: 'cimg'), companies_path%>
-
-        <div class="title"> <%= product.title %> </div>
-        <%= product.price %>
-        <%= product.outlet %>
-
+        <%= link_to (image_tag product.image.url(:medium),class: 'cimg'),product%>
+        <hr>
+        <div class="cinfo">
+        <p class="ctitle">  <%= product.title %> </p>
+        <p class="cprice"> Price: <%= product.price %> </p>
+        <p class="coutlet"> Outlet: <%= product.outlet %> </p>
+      </div>
 
 
         <!-- <%= product.category %> -->

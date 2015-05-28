@@ -7,11 +7,11 @@
 <div class="row">
 
   <div class="scroller">
-    <div><img src="assets/Salerot.jpg" alt="Price"></div>
+    <div><img src="assets/Salerot1.png" alt="Price"></div>
     <div><img src="assets/Salerot.jpg" alt="Price"></div>
     <div><img src="assets/Pricecheck.jpg" alt="Price"></div>
   </div>
-
+<!--
 
   <div class="categories col-md-12">
     <h1>Categories</h1>
@@ -31,24 +31,22 @@
     <a href="#">Shoes</a>
 </li>
 </ul>
-</div>
+</div> -->
 
+  <h1 class="cheading">Recently Compared Items </h1>
 
-<h1>Electronics</h1>
     <% @categories.each do |category| %>
         <div class="col-md-4">
 
           <div class=" img_b">
         <%= link_to (image_tag category.image.url(:medium), class: 'cimg'), products_path(category_id: category.id)%>
+        <hr>
+        <div class="cinfo">
+        <p class="ctitle"> <%= category.title %> </p>
+        <p class="cprice"> Price: <%= category.price %> </p>
+        <p class="coutlet"> Outlet: <%= category.outlet %> </p>
+      </div>
 
-
-        <div class="title"> <%= category.title %> </div>
-        <!-- <div class="info">
-          <ul>
-            <li>Price: ksh30,000 </li>
-            <li>Outlet: Nakumatt </li>
-            <li>Location: Nairobi </li>
-          </div> -->
 
         <!-- <%= link_to 'Show', category %>
         <%= link_to 'Edit', edit_category_path(category) %>
@@ -59,4 +57,4 @@
 
 </div>
 </div>
-<%= link_to 'New Category', new_category_path %>
+<!-- <%= link_to 'New Category', new_category_path %> -->
