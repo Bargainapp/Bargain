@@ -26,6 +26,8 @@ gem 'paperclip', '~> 4.2.0'
 gem 'bootstrap-sass', '~> 3.3.4'
 #Intelligent search made easy
 gem 'searchkick', '~> 0.8.7'
+#Compass rails is an adapter for the Compass Stylesheet Authoring Framework for Ruby on Rails.
+gem 'compass-rails', '~> 2.0.4'
 #Integrates Slick carousel, a jQuery plugin, into your Rails app.
 gem "jquery-slick-rails"
 

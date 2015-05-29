@@ -3,7 +3,7 @@
 
 
   <div class="container ">
-    <div class="row">
+    <div class="row ptop">
     <% @products.each do |product| %>
 
         <div class="col-md-4">
@@ -13,8 +13,8 @@
         <hr>
         <div class="cinfo">
         <p class="ctitle">  <%= product.title %> </p>
-        <p class="cprice"> Price: <%= product.price %> </p>
-        <p class="coutlet"> Outlet: <%= product.outlet %> </p>
+        <p class="cprice"> <span class="pred"><%= product.price %> </span> </p>
+        <p class="coutlet"> <span class = "pwhite" > <%= product.outlet %> </span> </p>
       </div>
 
 
@@ -42,5 +42,5 @@
   <% end %>
   </div>
 </div>
-<!--
-<%= link_to 'New Product', new_product_path %> -->
+
+ <%= link_to 'New Product', new_product_path %>

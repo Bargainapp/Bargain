@@ -9,59 +9,6 @@
         <%= submit_tag "search", name: nil, class: "btn btn-default" %>
       </p>
 
-      <% end %>
-
-  </div>
-</nav>
-
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <%= link_to "Bargain",root_url, :class => "navbar-brand head" %>
-
-      <%= form_tag search_products_path, method: :get, class: "navbar-form navbar-right", role: "search" do %>
-
-        <p>
-          <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "search" %>
-          <%= submit_tag "search", name: nil, class: "btn btn-default" %>
-        </p>
-
-        <% end %>
-
-    </div>
-  </nav>
-
-
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <%= link_to "Bargain",root_url, :class => "navbar-brand head" %>
-
-
-
-        <%= form_tag search_companies_path, method: :get, class: "navbar-form navbar-right", role: "search" do %>
-
-          <p>
-            <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "search" %>
-            <%= submit_tag "search", name: nil, class: "btn btn-default" %>
-          </p>
-
-
-          <% end %>
-
-      </div>
-    </nav>
-
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <%= link_to "Bargain",root_url, :class => "navbar-brand head" %>
-
-
-          <%= form_tag search_outlets_path, method: :get, class: "navbar-form navbar-right", role: "search" do %>
-
-            <p>
-              <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "search" %>
-              <%= submit_tag "search", name: nil, class: "btn btn-default" %>
-            </p>
-
             <% end %>
 
         </div>

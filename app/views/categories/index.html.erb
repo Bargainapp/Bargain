@@ -3,9 +3,11 @@
   <div class="bgimg">
     <div class="mainh">
       <h1>Welcome to <span class="bar">Bargain.</span></h1><span class="hspa">Comapre Prices of Electronics</span>
-    </div>  
+    </div>
     <h3>Search By</h3>
     <div class="bs"><button type="button">Category</button></div>
+    <div class="or"><h1>or</h1></div>
+    <div class="down"> <img  src ="assets/scrollArrow.png" class="sdown"> </div>
 
 
   </div>
@@ -47,18 +49,18 @@
         <hr>
         <div class="cinfo">
         <p class="ctitle"> <%= category.title %> </p>
-        <p class="cprice"> Price: <span class="pred"> <%= category.price %> </span> </p>
-        <p class="coutlet"> Outlet: <%= category.outlet %> </p>
+        <p class="cprice">  <span class="pred"> <%= category.price %> </span> </p>
+        <p class="coutlet"> <span class = "pwhite" > <%= category.outlet %> </span> </p>
       </div>
 
 
-        <!-- <%= link_to 'Show', category %>
+        <%= link_to 'Show', category %>
         <%= link_to 'Edit', edit_category_path(category) %>
-        <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %> -->
+        <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
     </div>
     <% end %>
 
 </div>
 </div>
-<!-- <%= link_to 'New Category', new_category_path %> -->
+<%= link_to 'New Category', new_category_path %>

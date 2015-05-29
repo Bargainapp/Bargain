@@ -16,8 +16,9 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import 'slick';
-@import 'slick-theme';
+
+
+
 
 *{
   margin: 0;
@@ -30,7 +31,9 @@ body {
       margin: 0 auto;
       padding: 0;
       }
-
+.ptop {
+  padding-top: 70px;
+}
       .bgimg {
         background-image: url('/assets/bgimg.jpg');
         background-size: cover;
@@ -92,6 +95,18 @@ body {
         font-weight: bold;
         }
 
+        .or {
+          text-align: center;
+          margin-top: -15px;
+        }
+
+        .down {
+          text-align: center;
+          margin-top: -20px;
+}
+        .sdown {
+          width: 100px;
+        }
 
 
       .bar {
@@ -178,7 +193,7 @@ body {
 
 .img_b {
   background-color: #fff;
-  height: 450px;
+  height: 480px;
   width: 374px;
   margin: 10px;
   border-radius: 6px;
@@ -229,26 +244,36 @@ margin-top: 42px;
 
 .cinfo {
   padding: 10px;
+  text-align: center;
+  margin-top: -15px;
 }
 
 .ctitle {
   text-align: center;
-  font-style: italic;
-  font-size: 24px;
+  font-size: 19px;
   padding-bottom: 5px;
-  color: #DB6161;
+  color: black;
+  font-weight: 600;
 }
 
 .cprice {
   font-size: 18px;
+  background-color: #db6161;
+  padding: 10px;
 }
 
 .pred {
-  color: #D11717
+  color: white
 }
 
 .coutlet {
   font-size: 18px;
+  background-color: black;
+  padding: 10px;
+}
+
+.pwhite {
+  color: white;
 }
 
 .cheading {
