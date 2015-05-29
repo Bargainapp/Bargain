@@ -18,7 +18,16 @@
 @import "bootstrap";
 
 
-
+a {
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
 
 *{
   margin: 0;
@@ -197,7 +206,6 @@ body {
   width: 374px;
   margin: 10px;
   border-radius: 6px;
-
 }
 
 .cimg {
@@ -292,6 +300,13 @@ width: 100%;
 padding: 50px;
 border-radius: 5px;
 }
+
+.sec {
+  padding-top: 100px;
+  text-align: center;
+
+}
+
 
 
 // }

@@ -4,7 +4,7 @@
         <div class="col-md-4">
           <div class="sec">
 
-        <%= link_to (image_tag category.image.url(:medium), class: 'img'), products_path%>
+        <%= link_to (image_tag category.image.url(:medium), class: 'img'), products_path(category_id: category.id)%>
         <div class="under">
         <hr class="line">
         <h3 class="cheading">

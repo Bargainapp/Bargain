@@ -1,16 +1,17 @@
 
-<h1>Companies</h1>
+
   <div class="container ">
   <div class="row">
+    <h1>Categories</h1>
     <% @companies.each do |company| %>
     <div class="col-md-4">
 
-      <div class=" img_b">
+      <div class=" img_b cate">
     <%= link_to (image_tag company.image.url(:medium), class: 'cimg') %>
     <div class="cinfo">
     <p class="ctitle"> <%= company.title %> </p>
-    <p class="cprice">  <span class="pred"> <%= company.price %> </span> </p>
-    <p class="coutlet"> <span class = "pwhite" > <%= company.outlet %> </span> </p>
+    <!-- <p class="cprice">  <span class="pred"> <%= company.price %> </span> </p>
+    <p class="coutlet"> <span class = "pwhite" > <%= company.outelt %> </span> </p> -->
   </div>
 
 
