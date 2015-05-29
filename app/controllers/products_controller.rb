@@ -14,7 +14,7 @@ class ProductsController < ApplicationController
   def index
     puts "************^^^^^^^^^" + params.inspect
     @products = Product.where("category_id = ?",params[:category_id])
-  
+
   end
 
   # GET /products/1
@@ -81,6 +81,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:title, :price, :outlet, :category_id, :image, )
+      params.require(:product).permit(:title, :price, :outlet, :desription, :location, :category_id, :image, )
     end
 end

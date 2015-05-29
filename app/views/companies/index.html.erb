@@ -4,20 +4,23 @@
   <div class="row">
     <% @companies.each do |company| %>
     <div class="col-md-4">
-      <div class="sec">
 
-        <%= link_to (image_tag company.image.url(:medium), class: 'img'), outlets_path%>
-        <div class="under">
-        <hr class="line">
-        <h3 class="cheading">
-        <%= company.title %></h3>
-        <%= company.product %>
-        <%= link_to 'Show', company %>
-        <%= link_to 'Edit', edit_company_path(company) %>
-        <%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %>
-      </div>
-      </div>
-    </div>
-    <% end %>
+      <div class=" img_b">
+    <%= link_to (image_tag company.image.url(:medium), class: 'cimg') %>
+    <div class="cinfo">
+    <p class="ctitle"> <%= company.title %> </p>
+    <p class="cprice">  <span class="pred"> <%= company.price %> </span> </p>
+    <p class="coutlet"> <span class = "pwhite" > <%= company.outlet %> </span> </p>
+  </div>
+
+
+    <%= link_to 'Show', company %>
+    <%= link_to 'Edit', edit_company_path(company) %>
+    <%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %>
   </div>
 </div>
+<% end %>
+
+</div>
+</div>
+<%= link_to 'New Company', new_company_path %>

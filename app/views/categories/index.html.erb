@@ -5,7 +5,7 @@
       <h1>Welcome to <span class="bar">Bargain.</span></h1><span class="hspa">Comapre Prices of Electronics</span>
     </div>
     <h3>Search By</h3>
-    <div class="bs"><button type="button">Category</button></div>
+    <div class="bs"> <%= button_to "Category", companies_path, :class => "button", :method => :get  %> </div>
     <div class="or"><h1>or</h1></div>
     <div class="down"> <img  src ="assets/scrollArrow.png" class="sdown"> </div>
 

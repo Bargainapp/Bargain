@@ -85,13 +85,13 @@ body {
       }
 
 
-      .bs button {
+       .button {
         background-color: rgb(219, 98, 98);
         border: none;
-        border-radius: 10px;
-        font-size: 35px;
+        border-radius:5px;
+        font-size: 23px;
         color: white;
-        padding: 8px;
+        padding: 16px;
         font-weight: bold;
         }
 
@@ -233,6 +233,9 @@ font-style: italic;
 margin-top: 42px;
 }
 
+.pinfo {
+  padding-top: 33px;
+}
 .pinfo ul {
   list-style: outside none none;
   font-size: 24px;
