@@ -4,7 +4,7 @@
 <div class="row wrapper ptop">
 
   <div class="col-md-6">
-  <%= image_tag @product.image.url(:medium), :class => " pimg", :id => "zoom_01", :'data-zoom-image' => @product.image.url(:medium) %>
+  <%= image_tag @product.image.url(:medium), :class => " pimg", :id => "zoom_01", :'data-zoom-image' => @product.avatar.url(:large) %>
    
     <script type="text/javascript">
         $('#zoom_01').elevateZoom();
