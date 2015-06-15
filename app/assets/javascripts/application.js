@@ -14,6 +14,7 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require jquery.slick
+//= require jquery.elevateZoom-3.0.8.min
 //= require initialize
 //= require turbolinks
 //= require_tree .

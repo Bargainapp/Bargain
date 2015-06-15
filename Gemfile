@@ -30,7 +30,8 @@ gem 'searchkick', '~> 0.8.7'
 gem 'compass-rails', '~> 2.0.4'
 #Integrates Slick carousel, a jQuery plugin, into your Rails app.
 gem "jquery-slick-rails"
-
+#gem for jQuery ElevateZoom 
+gem 'elevatezoom-rails', '~> 1.0.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 

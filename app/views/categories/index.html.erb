@@ -2,11 +2,11 @@
 
   <div class="bgimg">
     <div class="mainh">
-      <h1>Welcome to <span class="bar">Bargain.</span></h1><span class="hspa">Comapre Prices of Electronics</span>
+      <h1>Welcome to <span class="bar">Bargain.</span></h1><span class="hspa">Compare Prices of Electronics</span>
     </div>
     <h3>Search By</h3>
     <div class="bs"> <%= button_to "Category", companies_path, :class => "button", :method => :get  %> </div>
-    <div class="or"><h1>or</h1></div>
+    
     <div class="down"> <img  src ="assets/scrollArrow.png" class="sdown"> </div>
 
 
@@ -54,13 +54,13 @@
       </div>
 
 
-        <%= link_to 'Show', category %>
+        <!-- <%= link_to 'Show', category %>
         <%= link_to 'Edit', edit_category_path(category) %>
-        <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %> -->
       </div>
     </div>
     <% end %>
 
 </div>
 </div>
-<%= link_to 'New Category', new_category_path %>
+<!-- <%= link_to 'New Category', new_category_path %> -->

@@ -86,6 +86,7 @@ GEM
     elasticsearch-transport (1.0.9)
       faraday
       multi_json
+    elevatezoom-rails (1.0.0)
     erubis (2.7.0)
     execjs (2.5.2)
     faraday (0.9.1)
@@ -203,6 +204,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   compass-rails (~> 2.0.4)
+  elevatezoom-rails (~> 1.0.0)
   jbuilder (~> 2.0)
   jquery-rails
   jquery-slick-rails

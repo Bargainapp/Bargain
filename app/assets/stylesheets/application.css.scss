@@ -18,15 +18,9 @@
 @import "bootstrap";
 
 
-a {
-  color: #000;
-  &:visited {
-    color: #666;
-  }
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
+a.version:hover {
+
+  text-decoration: none;
 }
 
 *{
@@ -111,7 +105,7 @@ body {
 
         .down {
           text-align: center;
-          margin-top: -20px;
+          margin-top: 220px;
 }
         .sdown {
           width: 100px;
@@ -202,7 +196,7 @@ body {
 
 .img_b {
   background-color: #fff;
-  height: 480px;
+  height: 490px;
   width: 374px;
   margin: 10px;
   border-radius: 6px;
@@ -210,6 +204,10 @@ body {
 
 .cimg {
   padding: 30px;
+}
+
+.img_b:hover {
+  border: 3px solid #db6161;
 }
 
 .title {
