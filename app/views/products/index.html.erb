@@ -13,17 +13,17 @@
         <hr>
         <div class="cinfo">
         <p class="ctitle">  <%= product.title %> </p>
-        <p class="cprice"> <span class="pred"><%= product.price %> </span> </p>
+        <p class="cprice"> <span class="pred"><%= print_price (product.price) %> </span> </p>
         <p class="coutlet"> <span class = "pwhite" > <%= product.outlet %> </span> </p>
       </div>
 
 
-        <!-- <%= product.category %> -->
-
-        <!-- <%= link_to 'Show', product %>
+        <%= product.category %> 
+<!-- 
+         <%= link_to 'Show', product %>
         <%= link_to 'Edit', edit_product_path(product) %>
-        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> -->
-
+        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> 
+ -->
       <!-- <div class="col-md-6 ptitle"> -->
 
         <!-- <ul>
