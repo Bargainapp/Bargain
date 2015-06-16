@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150615155822) do
+ActiveRecord::Schema.define(version: 20150616144411) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "title"
@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(version: 20150615155822) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.float    "price"
     t.string   "outlet"
+    t.integer  "price"
   end
 
   create_table "companies", force: :cascade do |t|
@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(version: 20150615155822) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.float    "price"
     t.string   "outelt"
+    t.integer  "price"
   end
 
   add_index "companies", ["product_id"], name: "index_companies_on_product_id"
@@ -77,7 +77,6 @@ ActiveRecord::Schema.define(version: 20150615155822) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.float    "price"
     t.string   "outlet"
     t.text     "desription"
     t.string   "location"
@@ -85,6 +84,7 @@ ActiveRecord::Schema.define(version: 20150615155822) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.integer  "price"
   end
 
   add_index "products", ["category_id"], name: "index_products_on_category_id"
